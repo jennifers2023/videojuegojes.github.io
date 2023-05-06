@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #0c2a61;
+    text-shadow: 3px 3px 5px rgb(232, 252, 52);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #FF0099;  
+    /* fallback for old browsers */
+    background: #FFE000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(76, 87%, 48%, 0.432), hsla(53, 100%, 50%, 0.678)),  url(niños2.jpg); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(76, 100%, 53%, 0.342), hsla(53, 100%, 50%, 0.712)),  url(niños2.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav >a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 3px 5px #0c2a61;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 3px 3px 5px #191d24;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 30%;
+ 
+ 
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #e4fa1d;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.general{
+   display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #f2f2f2;
+}
+
+
+
+.general-2{
+    background-image: url(niñosgeneral.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(niñoa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-4{
+    background-image: url(videoimage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 50%;
+}
+
+.general h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #0c2a61;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 3px 3px 5px rgb(232, 252, 52);
+}
+
+.general p{
+    font-size: 16px;
+    color: #180d1b;
+    max-width: 25px 0 45px 0;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clientes */
+
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: #f8f410;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #3d3a3a;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* Our team*/
+
+.about-services{
+background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #f3f18b);  
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #f7f5a9); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+    
+}
+
+.about-servi{
+    background: #deeaf7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ddedf8);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #dae2f7); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 30px;
+    }
+
+.price {
+    
+    background: #94d8c9;  
+    /* fallback for old browsers */
+    background: #78c2a9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(162, 42%, 83%, 0.432), rgba(129, 194, 167, 0.678)),  url(aprendiendo.jpg) , no-repeat center; 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(166, 33%, 82%, 0.342), hsla(145, 33%, 66%, 0.712)),  url(aprendiendo.jpg), no-repeat center; 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+   
+}
+
+.price h2{
+    color: #fefbff;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px  #0c2a61;
+
+}
+
+.price p{
+    color: #fefbff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 100px;
+    text-shadow: 2px 2px 3px #414141;
+
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #d3926d;
+    color: #fefbff;
+    text-decoration: none;
+    background: #df8c48;
+}
+
+.btn:hover{
+    background: none;
+}
+
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-about{
+    color: #0c2a61;
+    text-shadow: 3px 3px 5px rgb(232, 252, 52);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.nosotros{
+    position: relative;
+}
+
+
+/* footer*/
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #f1ff33;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
